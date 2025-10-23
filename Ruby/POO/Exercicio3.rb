@@ -1,7 +1,7 @@
 # Classe MicroondasUnidade (Composição)
 class MicroondasUnidade
   def aquecer_por(segundos)
-    puts "🔸 Aquecendo por #{segundos} segundos..."
+    puts " Aquecendo por #{segundos} segundos..."
   end
 end
 
@@ -41,11 +41,11 @@ class TelefoneDeMicroondas
     novo_dmail = DMail.new(conteudo, hora_envio)
     @dmail_lista << novo_dmail
 
-    puts "✅ D-Mail enviado com sucesso!"
+    puts " D-Mail enviado com sucesso!"
   end
 
   def listar_dmails(horario_corte)
-    puts "\n🔹 Listando D-Mails enviados após #{horario_corte}:"
+    puts "\n Listando D-Mails enviados após #{horario_corte}:"
     dmails_filtrados = @dmail_lista.select { |d| d.hora_envio > horario_corte }
 
     if dmails_filtrados.empty?
